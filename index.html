@@ -3,11 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>City/Weather Search</title>
+  <title>City Weather Search</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <!-- YOUR CODE HERE -->
+  <div id="app">
+    <div class="search-container">
+      <input type="text" placeholder="Enter city name..." id="city-input" />
+      <button id="search-button">Search</button>
+    </div>
+    
+    <div id="weather-result" class="weather-card hidden">
+      <h2 class="city-info" id="city-info"></h2>
+      <h1 class="temperature" id="temperature"></h1>
+      <h3 class="country" id="country"></h3>
+      <p class="wind-speed" id="wind-speed"></p>
+      <p class="population" id="population"></p>
+      <p class="last-updated" id="last-updated"></p>
+      <div class="forecast" id="forecast">
+        <h3>Tomorrow's Forecast</h3>
+        <div id="forecast-details"></div>
+      </div>
+    </div>
+  </div>
+  
+  <button id="reset-button" class="hidden">Reset</button>
   
   <script src="./app.js"></script>
 </body>
