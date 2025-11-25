@@ -19,6 +19,7 @@ body {
     align-items: center;
     transition: background-image 0.5s ease-in-out;
     overflow: auto;
+    background-color: lightblue;
 }
 
 #app {
